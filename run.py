@@ -132,7 +132,19 @@ while(amount_of_times_wrong != 6 and latest_letters_right != length_of_word_to_g
     latest_letters_guessed.append(letterGuessed)
     latest_letters_right = printWord(latest_letters_guessed)
     printLines()
+    ### User was wrong af
+  else:
+    amount_of_times_wrong+=1
+    latest_letters_guessed.append(letterGuessed)
+    ### Update the drawing
+    print_hangman(amount_of_times_wrong)
+    ### Print word
+    latest_letters_right = printWord(latest_letters_guessed)
+    printLines()
 
+print("Game is over! Thank you for playing)") 
+print("You have won =(latest_letters_guessed))") 
+print("Disclaimer The above statement is not true")
 
 
 
