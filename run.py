@@ -114,11 +114,24 @@ def printLines():
 
 length_of_word_to_guess = len(randomWord)
 amount_of_times_wrong = 0
-current_guess_index = 0
-current_letters_guessed = []
-current_letters_right = 0
+latest_guess_index = 0
+latest_letters_guessed = []
+latest_letters_right = 0
 
-
+while(amount_of_times_wrong != 6 and latest_letters_right != length_of_word_to_guess):
+  print("\nLetters guessed so far: ")
+  for letter in latest_letters_guessed:
+    print(letter, end=" ")
+  ### Prompt user for input
+  letterGuessed = input("\nGuess a letter: ")
+  ### User is right
+  if(randomWord[latest_guess_index] == letterGuessed):
+    print_hangman(amount_of_times_wrong)
+    ### Print word
+    latest_guess_index+=1
+    latest_letters_guessed.append(letterGuessed)
+    latest_letters_right = printWord(latest_letters_guessed)
+    printLines()
 
 
 
