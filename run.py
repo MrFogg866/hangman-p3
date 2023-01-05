@@ -4,7 +4,7 @@ from termcolor import colored
 
 import sys
 
-print                        ("Welcome to Sports Car Hangman \n")
+print                        ("\033[2;31;43m Welcome to Sports Car Hangman \n")
 print  ("\033[1;32;40m _____________________________________________________________________________ \n")
 print  ("\033[1;32;40m       .----------.              .----------.              .----------.        \n")
 print  ("\033[1;32;40m      /            \            /            \            /            \       \n") 
@@ -114,34 +114,54 @@ latest_guess_index = 0
 latest_letters_guessed = []
 latest_letters_right = 0
 
+
+is_win = False
+tmp_letter_guess = ''
 while(times_wrong != 5 and latest_letters_right != word_length_to_guess):
   print("\nLetters guessed so far: ")
   for letter in latest_letters_guessed:
     print(letter, end=" ")
   ### Prompt user for input
   letterGuessed = input("\nGuess a letter: ")
+  letterGuessed = letterGuessed.lower()
+
   ### User is right
-  if(randomWord[latest_guess_index] == letterGuessed):
+  if(letterGuessed in randomWord):
+    tmp_letter_guess += letterGuessed
     print_hangman(times_wrong)
+    print("correct,keep guessing until the word is complete")
+
     ### Print word
     latest_guess_index+=1
     latest_letters_guessed.append(letterGuessed)
     latest_letters_right = printWord(latest_letters_guessed)
     printLines()
-    ### User was wrong af
+
+    ### User was wrong 
   else:
     times_wrong+=1
     latest_letters_guessed.append(letterGuessed)
     ### Update the drawing
     print_hangman(times_wrong)
+    print("incorrect, keep guessing")
     ### Print Car Make
     latest_letters_right = printWord(latest_letters_guessed)
     printLines()
 
 print("Game is over! Thank you for playing)") 
-print("Sorry that was a complete car crash, better luck next time")
-print("You have won =(latest_letters_guessed))") 
-print("Disclaimer The above statement is not true")
+
+if len(randomWord) == len(tmp_letter_guess):
+  is_win = True
+
+if is_win:
+
+  print("You have won =(%s)" % randomWord)
+  print("Disclaimer The above statement is not true")
+
+else:
+  print("Sorry that was a complete car crash, better luck next time")
+
+
 
 
 
