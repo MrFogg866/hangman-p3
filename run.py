@@ -77,16 +77,18 @@ def print_hangman(wrong):
     print("\033[1;32;40m  ___________   ___________   ______________  __________  ____________   /n")
 
 def printWord(guessedLetters):
+  tmp_guessedLetters = []
   counter=0
   rightLetters=0   
   for char in randomWord:
     if(char in guessedLetters):
       print(randomWord[counter], end=" ")
+      tmp_guessedLetters.append(char)
       rightLetters+=1
     else:
       print(" ", end=" ")
     counter+=1
-  return rightLetters 
+  return rightLetters, tmp_guessedLetters
      
 def printLines():
   print("\r")
