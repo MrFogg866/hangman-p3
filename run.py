@@ -5,6 +5,7 @@ from termcolor import colored
 import sys
 
 print                        ("\033[2;31;43m Welcome to Sports Car Hangman \n")
+print  ("There are 6 Luxury Car Manufacturers to guess, please enter one letter at a time, you have 5 attempts before you will crash, guess all the letters correctly and you will win a car")
 print  ("\033[1;32;40m _____________________________________________________________________________ ")
 print  ("\033[1;32;40m       .----------.              .----------.              .----------.        ")
 print  ("\033[1;32;40m      /            \            /            \            /            \       ") 
