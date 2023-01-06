@@ -104,6 +104,7 @@ latest_letters_right = 0
 is_win = False
 tmp_letter_guess = ''
 while(times_wrong != 5 and latest_letters_right != word_length_to_guess):
+  print()
   print("\nLetters guessed so far: ")
   for letter in latest_letters_guessed:
     print(letter, end=" ")
@@ -120,7 +121,7 @@ while(times_wrong != 5 and latest_letters_right != word_length_to_guess):
     ### Print word
     latest_guess_index+=1
     latest_letters_guessed.append(letterGuessed)
-    latest_letters_right = printWord(latest_letters_guessed)
+    latest_letters_right, latest_letters_guessed = printWord(latest_letters_guessed)
     printLines()
 
     ### User was wrong 
