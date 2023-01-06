@@ -79,7 +79,7 @@ def print_hangman(wrong):
 def printWord(guessedLetters):
   tmp_guessedLetters = []
   counter=0
-  rightLetters=0   
+  rightLetters=0
   for char in randomWord:
     if(char in guessedLetters):
       print(randomWord[counter], end=" ")
@@ -88,12 +88,12 @@ def printWord(guessedLetters):
     else:
       print(" ", end=" ")
     counter+=1
-  return rightLetters, tmp_guessedLetters
-     
+  return  rightLetters, tmp_guessedLetters
+
 def printLines():
   print("\r")
   for char in randomWord:
-    print("\u203E", end=" ")    
+    print("\u203E", end=" ")
 
 
 word_length_to_guess = len(randomWord)
@@ -101,7 +101,6 @@ times_wrong = 0
 latest_guess_index = 0
 latest_letters_guessed = []
 latest_letters_right = 0
-
 
 is_win = False
 tmp_letter_guess = ''
@@ -114,32 +113,35 @@ while(times_wrong != 5 and latest_letters_right != word_length_to_guess):
   letterGuessed = input("\nGuess a letter: ")
   letterGuessed = letterGuessed.lower()
 
+
+
   ### User is right
-  if(letterGuessed in randomWord):
+  if(letterGuessed in randomWord ):
     tmp_letter_guess += letterGuessed
     print_hangman(times_wrong)
-    print("correct,keep guessing until the word is complete")
-
+    print("correct, keep guessing until the word is complete")
     ### Print word
+
     latest_guess_index+=1
     latest_letters_guessed.append(letterGuessed)
     latest_letters_right, latest_letters_guessed = printWord(latest_letters_guessed)
     printLines()
-
-    ### User was wrong 
+    ### User was wrong af
   else:
+
     times_wrong+=1
     latest_letters_guessed.append(letterGuessed)
     ### Update the drawing
     print_hangman(times_wrong)
     print("incorrect, keep guessing")
     ### Print Car Make
-    latest_letters_right = printWord(latest_letters_guessed)
+    latest_letters_right, latest_letters_guessed = printWord(latest_letters_guessed)
     printLines()
 
-print("Game is over! Thank you for playing)") 
 
-if len(randomWord) == len(tmp_letter_guess):
+print("Game is over! Thank you for playing)")
+
+if len(randomWord) == len(latest_letters_guessed):
   is_win = True
 
 if is_win:
@@ -149,6 +151,10 @@ if is_win:
 
 else:
   print("Sorry that was a complete car crash, better luck next time")
+
+# print("Disclaimer The above statement is not true")
+
+
 
 
 
