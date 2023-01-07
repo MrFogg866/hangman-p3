@@ -1,6 +1,6 @@
 import random 
 
-print("\033[1;32;40m Welcome to Sports Car Hangman")
+print("\033[0;32;40m Welcome to Sports Car Hangman")
 print("There are 6 Car Manufacturers to guess-enter one letter at a time-you have 5 attempts before you will crash-guess the letters correctly and win a car")
 print(" _____________________________________________________________________________")
 print("      .----------.              .----------.              .----------.        ")

@@ -1,13 +1,13 @@
 # HANGMAN  SPORTS CAR EDITION
 
-The live link can be found here - https://hangman.herokuapp.com/
+The live link can be found here - https://carman.herokuapp.com/
 
 Welcome to the Hangman Sports Car Edition, this is a variation on the clasic hang man game.
 
 instead of your man becoming closer to a good old hanging like in the classic game, you will spell out the word crash if you cant guess the name of the sports car, resulting in absolute mayhem!!
 
 
-![screenshot](assets/images/ami.png)
+![screenshot](media/ami.png)
 
 
 
@@ -22,11 +22,11 @@ instead of your man becoming closer to a good old hanging like in the classic ga
 
 - When you run the programme you are greeted by the following welcome screen:
 
-![welcome](assets/images/intro.png)
+![welcome](media/welcome.png)
 
-- You are then prompted to choose a letter:
+- You are then prompted to choose a letter & shown the amount of letters to guess
 
-![menu](assets/images/menu.png)
+![menu](media/guess.png)
 
 
 - After you input the correct data you will see the hidden word appear.
