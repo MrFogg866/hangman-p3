@@ -1,8 +1,8 @@
 import random 
 
 print("\033[1;32;40m Welcome to Sports Car Hangman")
-print("There are 6 Luxury Car Manufacturers to guess,please enter one letter at a time, you have 5 attempts before you will crash, guess all the letters correctly and you will win a car")
-print(" _____________________________________________________________________________")
+print("There are 6 Luxury Car Manufacturers to guess-please enter one letter at a time-you have 5 attempts before you will crash-guess all the letters correctly and you will win a car")
+print(" _____________________________________________________________________________git ")
 print("      .----------.              .----------.              .----------.        ")
 print("     /            \            /            \            /            \       ") 
 print("   _(.-. _...._ .-.)_        _(.-. _...._ .-.)_        _(.-. _...._ .-.)_     ")
