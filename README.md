@@ -7,7 +7,7 @@ Welcome to the Hangman Sports Car Edition, this is a variation on the clasic han
 instead of your man becoming closer to a good old hanging like in the classic game, you will spell out the word crash if you cant guess the name of the sports car, resulting in absolute mayhem!!
 
 
-![screenshot](media/ami.png)
+![screenshot](media/ami2.png)
 
 
 
