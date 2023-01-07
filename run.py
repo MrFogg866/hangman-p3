@@ -1,31 +1,27 @@
 import random 
 
-from termcolor import colored
-
-import sys
-
-print                        ("\033[1;32;40m Welcome to Sports Car Hangman \n")
-print  ("There are 6 Luxury Car Manufacturers to guess, please enter one letter at a time, you have 5 attempts before you will crash, guess all the letters correctly and you will win a car")
-print  ("\033[1;32;40m _____________________________________________________________________________ ")
-print  ("\033[1;32;40m       .----------.              .----------.              .----------.        ")
-print  ("\033[1;32;40m      /            \            /            \            /            \       ") 
-print  ("\033[1;32;40m    _(.-. _...._ .-.)_        _(.-. _...._ .-.)_        _(.-. _...._ .-.)_     ")
-print  ("\033[1;32;40m   (_)`-' __)(__ `-'(_)      (_)`-' __()__ `-'(_)      (_)`-' __()__ `-'(_)    ") 
-print  ("\033[1;32;40m  (....__|MR_FOGG|__....)   (....__|MR_FOGG|__....)   (....__|MR_FOGG|__....)  ") 
-print  ("\033[1;32;40m   | |    ~~~~~~    | |      | |    ~~~~~~    | |      | |    ~~~~~~    | |    ") 
-print  ("\033[1;32;40m   `-'              `-'      `-'              `-'      `-'              `-'    ") 
-print  ("\033[1;32;40m _____________________________________________________________________________ ")
+print("\033[1;32;40m Welcome to Sports Car Hangman")
+print("There are 6 Luxury Car Manufacturers to guess,please enter one letter at a time, you have 5 attempts before you will crash, guess all the letters correctly and you will win a car")
+print("\033[1;32;40m _____________________________________________________________________________ ")
+print("\033[1;32;40m       .----------.              .----------.              .----------.        ")
+print("\033[1;32;40m      /            \            /            \            /            \       ") 
+print("\033[1;32;40m    _(.-. _...._ .-.)_        _(.-. _...._ .-.)_        _(.-. _...._ .-.)_     ")
+print("\033[1;32;40m   (_)`-' __)(__ `-'(_)      (_)`-' __()__ `-'(_)      (_)`-' __()__ `-'(_)    ") 
+print("\033[1;32;40m  (....__|MR_FOGG|__....)   (....__|MR_FOGG|__....)   (....__|MR_FOGG|__....)  ") 
+print("\033[1;32;40m   | |    ~~~~~~    | |      | |    ~~~~~~    | |      | |    ~~~~~~    | |    ") 
+print("\033[1;32;40m   `-'              `-'      `-'              `-'      `-'              `-'    ") 
+print("\033[1;32;40m _____________________________________________________________________________ ")
 
 wordLibrary = ["ferrari", "lamborghini", "mclaren", "maserati", "bentley", "porsche",]
 
-### Choose a random word
+# Choose a random word
 randomWord = random.choice(wordLibrary)
 
 for x in randomWord:
   print("_", end=" ")
 
 def print_hangman(wrong):
-  if(wrong == 0):
+  if (wrong == 0):
     print("    ")
     print("    ")
     print("    ")
@@ -110,35 +106,35 @@ while(times_wrong != 5 and latest_letters_right != word_length_to_guess):
   print("\nLetters guessed so far: ")
   for letter in latest_letters_guessed:
     print(letter, end=" ")
+
   ### Prompt user for input
   letterGuessed = input("\nGuess a letter: ")
   letterGuessed = letterGuessed.lower()
-
-
 
   ### User is right
   if(letterGuessed in randomWord ):
     tmp_letter_guess += letterGuessed
     print_hangman(times_wrong)
     print("correct, keep guessing until the word is complete")
-    ### Print word
 
+    ### Print word
     latest_guess_index+=1
     latest_letters_guessed.append(letterGuessed)
     latest_letters_right, latest_letters_guessed = printWord(latest_letters_guessed)
     printLines()
-    ### User was wrong af
-  else:
 
+    ### User was wrong 
+  else:
     times_wrong+=1
     latest_letters_guessed.append(letterGuessed)
+
     ### Update the drawing
     print_hangman(times_wrong)
     print("incorrect, keep guessing")
+
     ### Print Car Make
     latest_letters_right, latest_letters_guessed = printWord(latest_letters_guessed)
     printLines()
-
 
 print("Game is over! Thank you for playing)")
 
@@ -153,7 +149,7 @@ if is_win:
 else:
   print("Sorry that was a complete car crash, better luck next time")
 
-# print("Disclaimer The above statement is not true")
+
 
 
 
