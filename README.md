@@ -22,28 +22,28 @@ instead of your man becoming closer to a good old hanging like in the classic ga
 
 - When you run the programme you are greeted by the following welcome screen:
 
-![welcome](media/welcome.png)
+![intro](media/intro.png)
 
 - You are then prompted to choose a letter & shown the amount of letters to guess
 
-![menu](media/guess.png)
+![guess](media/guess2.png)
 
 
 - After you input the correct data you will see the hidden word appear.
 
-![final](assets/images/final.png)
+![correct](media/correct.png)
 
 - If you enter the  incorrect letter you will see a letter from the word CRASH appear.
 
-![incorrect](assets/images/incorrect.png)
+![fail](media/fail.png)
 
 - After 5 wrong attempts the whole word CRASH will appear, and the game is over.
 
-![numbers](assets/images/numbers.png)
+![crash](media/crash.png)
 
-- If you guess the word a winner messages will appear saying you have won the car that you have guessed the name of.
+- If you guess the word a winner messages will appear saying you have won the car that you have guessed the name of. With a disclaimer included to prevent anyone trying to claim the car. (pepsi harrier jet)
 
-![numbers](assets/images/numbers.png)
+![winner](media/winner.png)
 
 
 
@@ -67,9 +67,8 @@ To Deploy this project i used Heroku, the steps i used are as follows:
 1.  Before deployment i installed the list of dependencies using the command pip3 freeze > requirements.txt
 2. i then logged into my Heroku account and select new > create app 
 3. then i name my app and select country/region
-4. Settings > config vars, and in the "key" section i enter CREDS and in the "value" section i add the copy & pasted info from my CREDS.JSON file > add
-5. Settings > build packs > add build pack > python > save changes > add build pack > nodes > save changes 
-6. then ass the deployment feature was not working on Heroku i had to do it through my github terminal as follows:
+5. Settings > build packs > add build pack > python > save changes > add build pack > nodejs > save changes 
+6. then as the deployment feature was not working on Heroku i had to do it through my github terminal as follows:
 7. To login enter: Heroku login -i, and enter your Heroku login details>
 8. then enter: Heroku apps
 9. then enter: Heroku git:remote -a 
@@ -78,9 +77,9 @@ To Deploy this project i used Heroku, the steps i used are as follows:
 #### Testing:
 
 
-- I ran the code through the https://pep8online.com/
+- I would of ran the code through the https://pep8online.com/ but its currently down, so i installed pycodestyle by entering pip3 install pycodestyle into the terminal, this will shoW PEP8 errors and provide a list of PROBLEMS in the tab next the terminal as pictures below
 
-![pep8-testing](assets/images/pep8-testing.png)
+![problems](media/problems.png)
 
 - After reviewing the results i fixed all the errors with the results shown below
 
@@ -91,7 +90,7 @@ To Deploy this project i used Heroku, the steps i used are as follows:
 
 - I have enterered too many letters, and get this message.
 
-![letters](assets/images/letters.png)
+![letters](media/testing.png.png)
 
 - Ihave entered the same letter, and get this mesdsage
 

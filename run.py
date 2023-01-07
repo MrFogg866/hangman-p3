@@ -1,16 +1,27 @@
 import random 
 
 print("\033[1;32;48m Welcome to Sports Car Hangman")
-print("There are 6 Car Manufacturers to guess-enter one letter at a time-you have 5 attempts before you will crash-guess the letters correctly and win a car")
-print(" _____________________________________________________________________________")
-print("      .----------.              .----------.              .----------.        ")
-print("     /            \            /            \            /            \       ") 
-print("   _(.-. _...._ .-.)_        _(.-. _...._ .-.)_        _(.-. _...._ .-.)_     ")
-print("  (_)`-' __)(__ `-'(_)      (_)`-' __()__ `-'(_)      (_)`-' __()__ `-'(_)    ") 
-print(" (....__|MR_FOGG|__....)   (....__|MR_FOGG|__....)   (....__|MR_FOGG|__....)  ") 
-print("  | |    ~~~~~~    | |      | |    ~~~~~~    | |      | |    ~~~~~~    | |    ") 
-print("  `-'              `-'      `-'              `-'      `-'              `-'    ") 
-print(" _____________________________________________________________________________")
+print("There are 6 Car Manufacturers to guess\
+  enter one letter at a time-you have \
+  5 attempts before you will crash-guess the letters correctly and win a car")
+print(" _____________________________________\
+  ________________________________________")
+print("      .----------.              .----\
+  ------.              .----------.        ")
+print("     /            \            /     \
+        \            /            \       ") 
+print("   _(.-. _...._ .-.)_        _(.-. _.\
+  ..._ .-.)_        _(.-. _...._ .-.)_     ")
+print("  (_)`-' __)(__ `-'(_)      (_)`-' __(\
+  )__ `-'(_)      (_)`-' __()__ `-'(_)    ") 
+print(" (....__|MR_FOGG|__....)   (....__|MR_\
+  FOGG|__....)   (....__|MR_FOGG|__....)  ") 
+print("  | |    ~~~~~~    | |      | |    ~~~\
+  ~~~    | |      | |    ~~~~~~    | |    ") 
+print("  `-'              `-'      `-'       \
+         `-'      `-'              `-'    ") 
+print(" _____________________________________\
+  ________________________________________")
 
 wordLibrary = ["ferrari", "lamborghini", "mclaren", "maserati", "bentley", "porsche",]
 
