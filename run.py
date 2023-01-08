@@ -37,7 +37,7 @@ def print_hangman(wrong):
     print("    ")
     print(" __________    ____________  ______________   __________  ____________ ")
   elif(wrong == 1):
-     print("   ______ ")
+    print("    ______ ")
     print("  .' ___  | ")
     print(" / .'   \_|")
     print(" | |       ")
