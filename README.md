@@ -92,22 +92,19 @@ To Deploy this project i used Heroku, the steps i used are as follows:
 
 ![letters](media/testing.png.png)
 
-- I have entered the same letter, and get this mesdsage
+- I have entered the same letter, and there is no error code, it just asks gives the same request to enter again.
 
-![word](assets/images/word.png)
+![same](media/same.png)
 
-![low-number](assets/images/low-number.png)
+- And when i enter a number i get the same incorrect message as with other incorrect entries.
+
+![number](media/number.png)
 
 #### Cheat Code:
 
-- if you enter lq4r this will show you the name of the car manufacturer that needs to be guessed
+- if you enter some numbers this will show you the name of the car manufacturer that needs to be guessed, i had to remove this at the last minute due to running out of time and it showing permanently, but it would be a good feature to add in the future.
 
 ![cheat](media/cheat.png)
-
-
-
-
-
 
 
 
@@ -148,5 +145,4 @@ To Deploy this project i used Heroku, the steps i used are as follows:
 #### Credits:
 
 - 
-
 - Marcel - My mentor Marcel was extreamly helpful as always helping me feel confident in what I have made.
