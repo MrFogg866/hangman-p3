@@ -24,7 +24,7 @@ instead of your man becoming closer to a good old hanging like in the classic ga
 
 ![intro](media/intro.png)
 
-- You are then prompted to choose a letter & shown the amount of letters to guess
+- You are then prompted to choose a letter & shown the amount of letters to guess.
 
 ![guess](media/guess2.png)
 
@@ -50,7 +50,7 @@ instead of your man becoming closer to a good old hanging like in the classic ga
 #### User Goals and objectives:
 
 
-The main goals and objectives of this programme are as follows
+The main goals and objectives of this programme are as follows:
 
 - To give the user a fun game to play.
 - To provide a light challenge.
@@ -77,13 +77,13 @@ To Deploy this project i used Heroku, the steps i used are as follows:
 #### Testing:
 
 
-- I would of ran the code through the https://pep8online.com/ but its currently down, so i installed pycodestyle by entering pip3 install pycodestyle into the terminal, this will shoW PEP8 errors and provide a list of PROBLEMS in the tab next the terminal as pictures below
+- I would of ran the code through the https://pep8online.com/ but its currently down, so i installed pycodestyle by entering pip3 install pycodestyle into the terminal, this will shoW PEP8 errors and provide a list of PROBLEMS in the tab next the terminal as pictures below.
 
 ![problems](media/problems.png)
 
-- After reviewing the results i fixed all the errors with the results shown below
+- After reviewing the results,  i fixed all the errors mainly indentation and line to long errors, the results shown below.
 
-![pep8-testing-complete](assets/images/pep8-testing-complete.png)
+![fixed](media/fixed.png)
 
 #### Manual Testing:
 
@@ -92,7 +92,7 @@ To Deploy this project i used Heroku, the steps i used are as follows:
 
 ![letters](media/testing.png.png)
 
-- Ihave entered the same letter, and get this mesdsage
+- I have entered the same letter, and get this mesdsage
 
 ![word](assets/images/word.png)
 

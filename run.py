@@ -5,15 +5,24 @@ print("There are 6 Car Manufacturers to guess\
 enter one letter at a time\
 you have 5 attempts before you will crash\
 guess the letters correctly and win a car")
-print("___________________________________________________________________________")
-print("     .----------.              .----------.              .----------.      ")
-print("    /            \            /            \            /            \     ")
-print("  _(.-. _...._ .-.)_        _(.-. _...._ .-.)_        _(.-. _...._ .-.)_   ")
-print(" (_)`-' __)(__ `-'(_)      (_)`-' __( )__ `-'(_)      (_)`-' __()__ `-'(_) ")
-print("(....__|MR_FOGG|__....)   (....__|MR_FOGG|__....)   (....__|MR_FOGG|__....)")
-print(" | |    ~~~~~~    | |      | |    ~~~~~~    | |      | |    ~~~~~~    | |  ")
-print(" `-'              `-'      `-'               `-'      `-'              `-' ")
-print("___________________________________________________________________________")
+print("_____________________________________"
+      "______________________________________")
+print("     .----------.              .-----"
+      "-----.              .----------.      ")
+print("    /            \            /      "
+      "      \            /            \     ")
+print("  _(.-. _...._ .-.)_        _(.-. _..."
+      "._ .-.)_        _(.-. _...._ .-.)_    ")
+print(" (_)`-' __)(__ `-'(_)      (_)`-' __( "
+      "__ `-'(_)      (_)`-' __()__ `-'(_) ")
+print("(....__|MR_FOGG|__....)   (....__|MR_"
+      "FOGG|__....)   (....__|MR_FOGG|__....)")
+print(" | |    ~~~~~~    | |      | |    ~~~"
+      "~~~    | |      | |    ~~~~~~    | |  ")
+print(" `-'              `-'      `-'        "
+      "       `-'      `-'              `-' ")
+print("_______________________________________"
+      "____________________________________")
 
 wordLibrary = ["ferrari", "lamborghini", "mclaren",
                "maserati", "bentley", "porsche", ]
@@ -22,61 +31,74 @@ wordLibrary = ["ferrari", "lamborghini", "mclaren",
 randomWord = random.choice(wordLibrary)
 
 for x in randomWord:
-    print("_", end=" ")  
+    print("_", end=" ")
+
 
 def print_hangman(wrong):
-  if(wrong == 0):
-    print("    ")
-    print("    ")
-    print("    ")
-    print("    ")
-    print("    ")
-    print("    ")
-    print("    ")
-    print("    ")
-    print("    ")
-    print(" __________    ____________  ______________   __________  ____________ ")
-  elif(wrong == 1):
-    print("    ______ ")
-    print("  .' ___  | ")
-    print(" / .'   \_|")
-    print(" | |       ")
-    print(" \ `.___.'\ ")
-    print("  `._____.'")
-    print(" __________    ____________  ______________   __________  ____________ ")
+    if wrong == 0:
+        print("    ")
+        print("    ")
+        print("    ")
+        print("    ")
+        print("    ")
+        print("    ")
+        print("    ")
+        print("    ")
+        print("    ")
+        print(" __________    ____________  ______________"
+              "__________  ____________ ")
+    elif wrong == 1:
+        print("    ______ ")
+        print("  .' ___  | ")
+        print(" / .'   \_|")
+        print(" | |       ")
+        print(" \ `.___.'\ ")
+        print("  `._____.'")
+        print(" __________    ____________  ______________"
+              "__________  ____________ ")
+    elif wrong == 2:
+        print("    ______      _______   ")
+        print("  .' ___  |    |_   __ \  ")
+        print(" / .'   \_|      | |__) | ")
+        print(" | |             |  __ /  ")
+        print(" \ `.___.'\     _| |  \ \_")
+        print("  `._____.'    |____| |___|")
+        print(" __________    ____________  ______________"
+              "__________  ____________ ")
+    elif wrong == 3:
+        print("    ______      _______            __     ")
+        print("  .' ___  |    |_   __ \          /  \    ")
+        print(" / .'   \_|      | |__) |        / /\ \   ")
+        print(" | |             |  __ /        / ____ \  ")
+        print(" \ `.___.'\     _| |  \ \_    _/ /    \ \_ ")
+        print("  `._____.'    |____| |___|  |____|  |____|")
+        print(" __________    ____________  ______________   __________ "
+              " ____________ ")
+    elif wrong == 4:
+        print("    ______      _______            __           _______  ")
+        print("  .' ___  |    |_   __ \          /  \         /  ___  | ")
+        print(" / .'   \_|      | |__) |        / /\ \       |  (__ \_| ")
+        print(" | |             |  __ /        / ____ \       '.___`-.  ")
+        print(" \ `.___.'\     _| |  \ \_    _/ /    \ \_    |`\____) | ")
+        print("  `._____.'    |____| |___|  |____|  |____|   |_______.' ")
+        print(" __________    ____________  ______________   __________  "
+              "____________ ")
+    elif wrong == 5:
+        print("    ______      _______            __           _______    "
+              "____  ____  ")
+        print("  .' ___  |    |_   __ \          /  \         /  ___  |  "
+              "|_   ||   _| ")
+        print(" / .'   \_|      | |__) |        / /\ \       |  (__ \_|    "
+              "| |__| |   ")
+        print(" | |             |  __ /        / ____ \       '.___`-.    "
+              "|  __  |   ")
+        print(" \ `.___.'\     _| |  \ \_    _/ /    \ \_    |`\____) |  "
+              "_| |  | |_  ")
+        print("  `._____.'    |____| |___|  |____|  |____|   |_______.'  "
+              "|____||____| ")
+        print(" __________    ____________  ______________   __________  "
+              "____________ ")
 
-  elif(wrong == 2):
-    print("    ______      _______   ")
-    print("  .' ___  |    |_   __ \  ")
-    print(" / .'   \_|      | |__) | ")
-    print(" | |             |  __ /  ")
-    print(" \ `.___.'\     _| |  \ \_")
-    print("  `._____.'    |____| |___|")
-    print(" __________    ____________  ______________   __________  ____________ ")
-  elif(wrong == 3):
-    print("    ______      _______            __     ")
-    print("  .' ___  |    |_   __ \          /  \    ")
-    print(" / .'   \_|      | |__) |        / /\ \   ")
-    print(" | |             |  __ /        / ____ \  ")
-    print(" \ `.___.'\     _| |  \ \_    _/ /    \ \_ ")
-    print("  `._____.'    |____| |___|  |____|  |____|")
-    print(" __________    ____________  ______________   __________  ____________ ")
-  elif(wrong == 4):
-    print("    ______      _______            __           _______  ")
-    print("  .' ___  |    |_   __ \          /  \         /  ___  | ")
-    print(" / .'   \_|      | |__) |        / /\ \       |  (__ \_| ")
-    print(" | |             |  __ /        / ____ \       '.___`-.  ")
-    print(" \ `.___.'\     _| |  \ \_    _/ /    \ \_    |`\____) | ")
-    print("  `._____.'    |____| |___|  |____|  |____|   |_______.' ")
-    print(" __________    ____________  ______________   __________  ____________ ")
-  elif(wrong == 5): 
-    print("    ______      _______            __           _______    ____  ____  ")
-    print("  .' ___  |    |_   __ \          /  \         /  ___  |  |_   ||   _| ")
-    print(" / .'   \_|      | |__) |        / /\ \       |  (__ \_|    | |__| |   ")
-    print(" | |             |  __ /        / ____ \       '.___`-.     |  __  |   ")
-    print(" \ `.___.'\     _| |  \ \_    _/ /    \ \_    |`\____) |   _| |  | |_  ")
-    print("  `._____.'    |____| |___|  |____|  |____|   |_______.'  |____||____| ")
-    print(" __________    ____________  ______________   __________  ____________ ")
 
 def printWord(guessedLetters):
     tmp_guessedLetters = []
@@ -115,33 +137,35 @@ while (times_wrong != 5 and latest_letters_right != word_length_to_guess):
     for letter in latest_letters_guessed:
         print(letter, end=" ")
 
-    ### Prompt user for input
+    # Prompt user for input
     letterGuessed = input("\nGuess a letter: ")
     letterGuessed = letterGuessed.lower()
 
-    ### User is right
+    # User is right
     if (letterGuessed in randomWord):
         tmp_letter_guess += letterGuessed
         print_hangman(times_wrong)
         print("correct, keep guessing until the word is complete")
 
-        ### Print word
+        # Print word
         latest_guess_index += 1
         latest_letters_guessed.append(letterGuessed)
-        latest_letters_right, latest_letters_guessed = printWord(latest_letters_guessed)
+        latest_letters_right, latest_letters_guessed = printWord(
+            latest_letters_guessed)
         printLines()
 
-        ### User was wrong
+        # User was wrong
     else:
         times_wrong += 1
         latest_letters_guessed.append(letterGuessed)
 
-        ### Update the drawing
+        # Update the drawing
         print_hangman(times_wrong)
         print("incorrect, keep guessing")
 
-        ### Print Car Make
-        latest_letters_right, latest_letters_guessed = printWord(latest_letters_guessed)
+        # Print Car Make
+        latest_letters_right, latest_letters_guessed = printWord(
+            latest_letters_guessed)
         printLines()
 
 print("Game is over! Thank you for playing)")
@@ -156,14 +180,3 @@ if is_win:
 
 else:
     print("Sorry that was a complete car crash, better luck next time")
-
-
-
-
-
-
-
-
-
-
-
