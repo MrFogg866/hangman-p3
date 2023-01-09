@@ -90,9 +90,9 @@ To Deploy this project i used Heroku, the steps i used are as follows:
 
 - I have enterered too many letters, and get this message.
 
-![letters](media/testing.png.png)
+![letters](media/testing.png)
 
-- I have entered the same letter, and there is no error code, it just asks gives the same request to enter again.
+- I have entered the same letter, and there is no error, it just asks gives the same request to enter again.
 
 ![same](media/same.png)
 
@@ -126,7 +126,7 @@ To Deploy this project i used Heroku, the steps i used are as follows:
 
 - [Gitpod](https://www.gitpod.io/) was used as the Code Editor for the site.
 
-- [Pep8](https://pep8online.com/) - this was not used to fix any errors found (currently down so installed pycodestylle).
+- [Pep8](https://pep8online.com/) - this was not used to fix any errors found (currently down so installed pycodestyle).
 
 - [Heroku](https://heroku.com/) - this was used to deploy the programme.
 
