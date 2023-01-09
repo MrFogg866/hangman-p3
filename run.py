@@ -129,7 +129,7 @@ is_win = False
 tmp_letter_guess = ''
 while (times_wrong != 5 and latest_letters_right != word_length_to_guess):
     print()
-    print("gusess Number: ", randomWord)
+    print("guess Number: ", randomWord)
     print("\nLetters guessed so far: ")
 
     for letter in latest_letters_guessed:
