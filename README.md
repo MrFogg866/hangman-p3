@@ -6,10 +6,7 @@ Welcome to the Hangman Sports Car Edition, this is a variation on the clasic han
 
 instead of your man becoming closer to a good old hanging like in the classic game, you will spell out the word crash if you cant guess the name of the sports car, resulting in absolute mayhem!!
 
-
-![screenshot](media/ami2.png)
-
-
+![screenshot](media/ami.png)
 
 ## How to use:
 
@@ -19,10 +16,9 @@ instead of your man becoming closer to a good old hanging like in the classic ga
 
 #### Features:
 
-
 - When you run the programme you are greeted by the following welcome screen:
 
-![intro](media/intro.png)
+![intro](media/welcome.png)
 
 - You are then prompted to choose a letter & shown the amount of letters to guess.
 
@@ -45,10 +41,7 @@ instead of your man becoming closer to a good old hanging like in the classic ga
 
 ![winner](media/winner.png)
 
-
-
 #### User Goals and objectives:
-
 
 The main goals and objectives of this programme are as follows:
 
@@ -57,10 +50,7 @@ The main goals and objectives of this programme are as follows:
 - To be simple to use with easy to follow instructions.
 - The programme will provide a final message saying you have lost or won.
 
-
-
 #### Deployment:
-
 
 To Deploy this project i used Heroku, the steps i used are as follows:
 
@@ -76,7 +66,6 @@ To Deploy this project i used Heroku, the steps i used are as follows:
 
 #### Testing:
 
-
 - I would of ran the code through the https://pep8online.com/ but its currently down, so i installed pycodestyle by entering pip3 install pycodestyle into the terminal, this will shoW PEP8 errors and provide a list of PROBLEMS in the tab next the terminal as pictures below.
 
 ![problems](media/problems.png)
@@ -86,7 +75,6 @@ To Deploy this project i used Heroku, the steps i used are as follows:
 ![fixed](media/fixed.png)
 
 #### Manual Testing:
-
 
 - I have enterered too many letters, and get this message.
 
@@ -107,9 +95,7 @@ To Deploy this project i used Heroku, the steps i used are as follows:
 ![cheat](media/cheat.png)
 
 
-
 #### Phase 2:
-
 
 - There are some additional features that could be added at a later stage to create a more detailed and complete picture for the user some of these are noted below
 
@@ -120,7 +106,6 @@ To Deploy this project i used Heroku, the steps i used are as follows:
 
 
 #### Technologies Used: 
-
 
 - [Github](https://github.com/) was used to create the repository and to store the project's code after pushed from Git.
 
@@ -137,12 +122,7 @@ To Deploy this project i used Heroku, the steps i used are as follows:
 - [Ami](https://ui.dev/amiresponsive) - this was used to create the screenshot image at the top of the readme file.
 
 
-
-
-
-
-
 #### Credits:
 
-- 
+- Codeinstitute - The tutor team is really helpful with getting any issues resovled quickly
 - Marcel - My mentor Marcel was extreamly helpful as always helping me feel confident in what I have made.
