@@ -107,7 +107,10 @@ To Deploy this project i used Heroku, the steps i used are as follows:
 
 - There are some additional features that could be added at a later stage to create a more detailed and complete picture for the user some of these are noted below
 
-1. 
+1. Give the user a option for different colour themes.
+2. Show a image of the car they havent won when they win.
+3. In adition to the crash word being shown, a tombstone saying R.I.P can pop up and flash when ther user looses.
+4. There could be a option at the start on what categorys the random word selection will be cars, fruits, champion arm wrestlers ect.
 
 
 #### Technologies Used: 
@@ -117,7 +120,7 @@ To Deploy this project i used Heroku, the steps i used are as follows:
 
 - [Gitpod](https://www.gitpod.io/) was used as the Code Editor for the site.
 
-- [Pep8](https://pep8online.com/) - this was used to fix any errors found (mainly spacing issues).
+- [Pep8](https://pep8online.com/) - this was not used to fix any errors found (currently down so installed pycodestylle).
 
 - [Heroku](https://heroku.com/) - this was used to deploy the programme.
 
