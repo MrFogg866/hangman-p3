@@ -98,6 +98,15 @@ To Deploy this project i used Heroku, the steps i used are as follows:
 
 ![low-number](assets/images/low-number.png)
 
+#### Cheat Code:
+
+- if you enter lq4r this will show you the name of the car manufacturer that needs to be guessed
+
+![cheat](media/cheat.png)
+
+
+
+
 
 
 
